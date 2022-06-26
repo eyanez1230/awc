@@ -89,9 +89,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Portfolio Details</li>
+          <li class="realtor-name"></li>
         </ol>
-        <h2>Portfolio Details</h2>
+        <h2 class="realtor-name"></h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -119,7 +119,7 @@
 
           <div class="col-lg-6">
             <div class="portfolio-info">
-              <h3 id="realtor-name">Project information</h3>
+              <h3 class="realtor-name"></h3>
               <ul>
                 <li><strong>Title</strong>: <span id="title">Realtor</span></li>
                 <li><strong>Phone</strong>: <span id="phone">Realtor</span></li>
@@ -243,7 +243,26 @@
     const profile = urlParams.get('profile');
 
     switch (profile) {
+      case "monica-diaz-campbell":
+        $(".realtor-name").html("Monica Diaz-Campbell");
+        $("#profile-picture").attr("src", "assets/img/team/team-1.jpg");
+        $("#title").html("Listing Agent");
+        $("#phone").html("(626) 890-7187");
+        $("#email").html("monica@awc.realty");
+        $("#license").html("DRE #01293082");
+        $("#about-me").html("<p>Monica Diaz has been a full time successful real estate sales professional since 2004. Formerly 11 years with Century 21 Masters, 4 years with Keller Williams Covina, and now with eXp Realty, Monica has sold over $350 Million in real estate in her career and is continues to be a top producing agent in Southern California.</p><p>Monica was a successful home appraiser for 14 years and is an expert in understanding the value of Southern CA homes.</p>")
+        break;
+      case "george-cordova":
+        $(".realtor-name").html("George Cordova");
+        $("#profile-picture").attr("src", "assets/img/team/team-2.jpg");
+        $("#title").html("Realtor");
+        $("#phone").html("(626) 485-4341");
+        $("#email").html("george@awc.realty");
+        $("#license").html("BRE# 01886156");
+        $("#about-me").html("<p>I decided to get into the real estate industry in 2006 after purchasing some investment properties. Prior to real estate, I worked in the management field since the age of 22. I managed work forces from 30 to over 1,000 employees. My experience in managing people and teams has been instrumental in my success in real estate. I pride myself in my communication, follow up, and negotiating skills. I believe that as an agent representing a buyer or a seller, it is very important to keep my client's informed in every step of the process. I believe that a person’s character speaks volumes, the characteristics that I want my clients to remember me by are Professionalism and Integrity. For me, real estate is not a job or a career, it is something that I genuinely love doing. I am ready to get you into escrow.</p>")
+        break;
       case "matthew-wong":
+        $(".realtor-name").html("Matthew Wong");
         $("#profile-picture").attr("src", "assets/img/team/team-3.jpg");
         $("#title").html("Realtor");
         $("#phone").html("(626) 759-3366");
