@@ -50,18 +50,12 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="https://search.awc.realty" target="_blank">Buy</a></li>
-          <li class="dropdown"><a href="#"><span>Sell</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">What's My Home Worth</a></li>
-              <li><a href="#">Why List With Us</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Communities</a></li>
-          <li><a class="nav-link scrollto" href="#team">Financing</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#buy" target="_blank">Buy</a></li>
+          <li><a class="nav-link scrollto" href="#sell"><span>Sell</span></a>
           <li><a class="nav-link scrollto" href="#about">Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#financing">Financing</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -109,7 +103,7 @@
     <!-- End Clients Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="home-search" class="about section-bg">
+    <section id="buy" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row no-gutters">
@@ -270,17 +264,20 @@
     </section><!-- End Tabs Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg ">
+    <section id="sell" class="services section-bg ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <h2>Sell</h2>
+          <p>Get a FREE analysis of your home! Find out your home value, home equity, refinance and mortgage reduction
+            and much more!</p>
         </div>
 
         <div class="row">
-          <div class="col-md-4">
+          <div id="homebot_homeowner"></div>
+          <script> (function (h, b) { var w = window, d = document, s = 'script', x, y; w['__hb_namespace'] = h; w[h] = w[h] || function () { (w[h].q = w[h].q || []).push(arguments) }; y = d.createElement(s); x = d.getElementsByTagName(s)[0]; y.async = 1; y.src = b; x.parentNode.insertBefore(y, x) })('Homebot', 'https://embed.homebotapp.com/lgw/v1/widget.js'); Homebot('#homebot_homeowner', '8d41d55529c4b8ca539cd24db54fd5c44e875f7e794aa217') </script>
+
+          <!-- <div class="col-md-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <i class="bi bi-briefcase"></i>
               <h4><a href="#">Buying</a></h4>
@@ -303,7 +300,7 @@
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -468,7 +465,8 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Testimonials</h2>
-          <p>See what our customers say about why we are the #1 five star reputation real estate team in the San Gabriel Valley</p>
+          <p>See what our customers say about why we are the #1 five star reputation real estate team in the San Gabriel
+            Valley</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -477,7 +475,15 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <span class="yelp-review" data-review-id="frmnkRR5ZebdQge9j4yNRQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=LHfYLuUYjd3E-tG27wgNVg" rel="nofollow noopener">Laura M.</a>'s <a href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=frmnkRR5ZebdQge9j4yNRQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w" rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                  <span class="yelp-review" data-review-id="frmnkRR5ZebdQge9j4yNRQ" data-hostname="www.yelp.com">Read <a
+                      href="https://www.yelp.com/user_details?userid=LHfYLuUYjd3E-tG27wgNVg"
+                      rel="nofollow noopener">Laura M.</a>'s <a
+                      href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=frmnkRR5ZebdQge9j4yNRQ"
+                      rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w"
+                      rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com"
+                      rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+                  </span>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -485,7 +491,15 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <span class="yelp-review" data-review-id="3hpST_khSIcaUIJNzXsLBQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=6NgOpMm1yPLwMZrxq9UDHQ" rel="nofollow noopener">Brenda V.</a>'s <a href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=3hpST_khSIcaUIJNzXsLBQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w" rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                  <span class="yelp-review" data-review-id="3hpST_khSIcaUIJNzXsLBQ" data-hostname="www.yelp.com">Read <a
+                      href="https://www.yelp.com/user_details?userid=6NgOpMm1yPLwMZrxq9UDHQ"
+                      rel="nofollow noopener">Brenda V.</a>'s <a
+                      href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=3hpST_khSIcaUIJNzXsLBQ"
+                      rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w"
+                      rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com"
+                      rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+                  </span>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -494,8 +508,14 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <span class="yelp-review" data-review-id="Btaqa-82cE2DQtzyf6JP7g" data-hostname="www.yelp.com">
-                    Read <a href="https://www.yelp.com/user_details?userid=sE2OwW7od0QD0iZGUlk4Sg" rel="nofollow noopener">Angelina D.</a>'s <a href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=Btaqa-82cE2DQtzyf6JP7g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w" rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
-                 </span>
+                    Read <a href="https://www.yelp.com/user_details?userid=sE2OwW7od0QD0iZGUlk4Sg"
+                      rel="nofollow noopener">Angelina D.</a>'s <a
+                      href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=Btaqa-82cE2DQtzyf6JP7g"
+                      rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w"
+                      rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com"
+                      rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+                  </span>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -503,7 +523,15 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <span class="yelp-review" data-review-id="I2R08VaHhDN0wxVrPM-mZg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=51Cc0Xlg8WGaZ7G2aisMTg" rel="nofollow noopener">Natasha A.</a>'s <a href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=I2R08VaHhDN0wxVrPM-mZg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w" rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                  <span class="yelp-review" data-review-id="I2R08VaHhDN0wxVrPM-mZg" data-hostname="www.yelp.com">Read <a
+                      href="https://www.yelp.com/user_details?userid=51Cc0Xlg8WGaZ7G2aisMTg"
+                      rel="nofollow noopener">Natasha A.</a>'s <a
+                      href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=I2R08VaHhDN0wxVrPM-mZg"
+                      rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w"
+                      rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com"
+                      rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+                  </span>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -511,7 +539,15 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <span class="yelp-review" data-review-id="scFfoDOIuTQ24wDENdnm4Q" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=5Qw30qk_jzTeeB5GIN26Tg" rel="nofollow noopener">Janine S.</a>'s <a href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=scFfoDOIuTQ24wDENdnm4Q" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w" rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                  <span class="yelp-review" data-review-id="scFfoDOIuTQ24wDENdnm4Q" data-hostname="www.yelp.com">Read <a
+                      href="https://www.yelp.com/user_details?userid=5Qw30qk_jzTeeB5GIN26Tg"
+                      rel="nofollow noopener">Janine S.</a>'s <a
+                      href="https://www.yelp.com/biz/agents-who-care-realty-covina?hrid=scFfoDOIuTQ24wDENdnm4Q"
+                      rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/l_180nETjvbJ7g515UwS3w"
+                      rel="nofollow noopener">Agents Who Care Realty</a> on <a href="https://www.yelp.com"
+                      rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+                  </span>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -524,7 +560,7 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="finance" class="finance section-bg">
+    <section id="financing" class="finance section-bg">
       <div class="container aos-init aos-animate" data-aos="fade-up">
 
         <div class="section-title">
@@ -550,10 +586,8 @@
               <div class="member-img">
                 <img src="assets/img/marc-chaimberlain.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/marcchamberlain" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/marc-chamberlain" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -580,65 +614,87 @@
         <ul class="faq-list accordion" data-aos="fade-up">
 
           <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">How long will it take to sell my home? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">How long will it take to sell my home?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Once the house is on the market, it may take anywhere from four to six weeks to sell. However, if the market is fairly hot, a seller could see their house off the market within a week. On the flip side, 
-                if there is a lull in the market or issues arise such as negotiation, lack of exposure, or house conditions then the property can sit on the market for months.
+                Once the house is on the market, it may take anywhere from four to six weeks to sell. However, if the
+                market is fairly hot, a seller could see their house off the market within a week. On the flip side,
+                if there is a lull in the market or issues arise such as negotiation, lack of exposure, or house
+                conditions then the property can sit on the market for months.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">What is the selling price of my home? <i class="bx bx-chevron-down icon-show"></i><i
-                class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">What is the selling price of my home?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
-                The selling price of a house fluctuates depending on multiple factors. The most common ones are the neighborhood and what similar-sized houses are currently selling for. Also, look at the age and condition. Do major repairs need to be done? If so, that might lower the property. 
-                And again, the market matters. Like everything else, home prices vary depending on supply and demand. Your job as a realtor is to best inform your clients about these different factors and accurately list their house.
+                The selling price of a house fluctuates depending on multiple factors. The most common ones are the
+                neighborhood and what similar-sized houses are currently selling for. Also, look at the age and
+                condition. Do major repairs need to be done? If so, that might lower the property.
+                And again, the market matters. Like everything else, home prices vary depending on supply and demand.
+                Your job as a realtor is to best inform your clients about these different factors and accurately list
+                their house.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">What is an agent’s commission fee? <i class="bx bx-chevron-down icon-show"></i><i
-                class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">What is an agent’s commission fee? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq3" class="collapse" data-bs-parent=".faq-list">
               <p>
-                In a real estate transaction, the agent is usually paid by the seller via commission as opposed to a flat free. Typically, a real estate commission fee is 5–6% of the home’s final sale price. In many cases, both the buyer’s agent and the seller’s agent split the commission fee 50/50. Both receiving 2.5–3%. As a broker or agent, you can use this easy to use real estate commission calculator to determine your commission fee.
-                 Also, know that some real estate agencies will work at a discounted rate of around 3% or for a flat service fee. The discounted rate and flat fee can be cheaper, but can also result in a lower quality of service.
+                In a real estate transaction, the agent is usually paid by the seller via commission as opposed to a
+                flat free. Typically, a real estate commission fee is 5–6% of the home’s final sale price. In many
+                cases, both the buyer’s agent and the seller’s agent split the commission fee 50/50. Both receiving
+                2.5–3%. As a broker or agent, you can use this easy to use real estate commission calculator to
+                determine your commission fee.
+                Also, know that some real estate agencies will work at a discounted rate of around 3% or for a flat
+                service fee. The discounted rate and flat fee can be cheaper, but can also result in a lower quality of
+                service.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">What is the first step in buying a home? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">What is the first step in buying a
+              home? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq4" class="collapse" data-bs-parent=".faq-list">
               <p>
-                The absolute first step for your client is to get approved for a mortgage. Without being approved for a mortgage it will be quite difficult, if not impossible, to purchase a new home. 
-                If a potential client reaches out to you, have them go through the tenant screening process and then guide them to a reputable mortgage corporation and advisor that you trust.
+                The absolute first step for your client is to get approved for a mortgage. Without being approved for a
+                mortgage it will be quite difficult, if not impossible, to purchase a new home.
+                If a potential client reaches out to you, have them go through the tenant screening process and then
+                guide them to a reputable mortgage corporation and advisor that you trust.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">What is a mortgage and how does it work? <i class="bx bx-chevron-down icon-show"></i><i
-                class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">What is a mortgage and how does it
+              work? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq5" class="collapse" data-bs-parent=".faq-list">
               <p>
-                A mortgage is a type of loan to finance a property. The majority of people are not wealthy enough to purchase a house in total. Thus, 
-                a mortgage serves as a secure loan that comes with a fixed interest rate and gets paid off over 15 or 30 years. If need be, your client can refinance their mortgage and payments in the future.
+                A mortgage is a type of loan to finance a property. The majority of people are not wealthy enough to
+                purchase a house in total. Thus,
+                a mortgage serves as a secure loan that comes with a fixed interest rate and gets paid off over 15 or 30
+                years. If need be, your client can refinance their mortgage and payments in the future.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">How many houses should I view before purchasing one? <i class="bx bx-chevron-down icon-show"></i><i
-                class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">How many houses should I view before
+              purchasing one? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq6" class="collapse" data-bs-parent=".faq-list">
               <p>
-                The number of houses your client wants to view can depend greatly. However, it is much easier today to connect with your clients virtually. You can now see houses online by taking virtual tours or seeing detailed photographs. 
-                So, you can help your client by giving them access to your online systems so that they can view as many properties as they desire. Once a list is narrowed down, you can visit properties with them or on their behalf.
+                The number of houses your client wants to view can depend greatly. However, it is much easier today to
+                connect with your clients virtually. You can now see houses online by taking virtual tours or seeing
+                detailed photographs.
+                So, you can help your client by giving them access to your online systems so that they can view as many
+                properties as they desire. Once a list is narrowed down, you can visit properties with them or on their
+                behalf.
               </p>
             </div>
           </li>
@@ -991,7 +1047,6 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Agents Who Care</h3>
             <p>
@@ -1004,28 +1059,25 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday <br /> 8:30AM - 9:30PM</p>
+            <p>Saturday - Sunday <br /> 9:00AM - 7:30PM</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Buy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sell</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="col-lg-5 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Stay up to date with the latest market trends!</p>
             <form action="" method="post">
@@ -1045,11 +1097,10 @@
         </div>
       </div>
       <div class="social-links text-center text-md-end pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/AWCRealty/" target="_blank" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/awcrealty/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -1065,9 +1116,17 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".__hblgw--heading-container").remove();
+    });
+  </script>
 
 </body>
 
