@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -97,48 +99,44 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
-
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                <div>
+                  <img id="profile-picture" src="" alt="">
                 </div>
 
               </div>
-              <div class="swiper-pagination"></div>
+              <!-- <div style="margin-top:50px; text-align:center;">
+                  <a href="#contact" class="get-started-btn">Contact Me</a>
+                  &nbsp;
+                  <a href="#contact" class="get-started-btn">Contact Me</a>
+                </div> -->
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3 id="realtor-name">Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Title</strong>: <span id="title">Realtor</span></li>
+                <li><strong>Phone</strong>: <span id="phone">Realtor</span></li>
+                <li><strong>Email</strong>: <span id="email">Realtor</span></li>
+                <li><strong>License</strong>: <span id="license">Realtor</span></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              <h2>About Me</h2>
+              <p id="about-me">
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
+                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
+                eius.
               </p>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -222,7 +220,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -232,9 +231,29 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const profile = urlParams.get('profile');
+
+    switch (profile) {
+      case "matthew-wong":
+        $("#profile-picture").attr("src", "assets/img/team/team-3.jpg");
+        $("#title").html("Realtor");
+        $("#phone").html("(626) 759-3366");
+        $("#email").html("matt@awc.realty");
+        $("#license").html("BRE# 02013717");
+        $("#about-me").html("<p>Matthew Wong is a premier agent that ranks in the top 8% of agents in Southern California. Originally from Nassau, The Bahamas, he moved to Southern California in 2005 to pursue his higher education.  After graduating from UCLA he worked as an Executive Team Leader at Target managing the front end and guest experiences at the Commerce store.  Since his time here, Matt has fallen in love with the great weather and the friendly people, which is why he chose to work, stay, and reside in the San Gabriel Valley.</p><p>His specialty lies within residential real estate, helping investors and first time home buyers buy, sell, lease, or rent a home.  Whether it is an investment property or a personal residence, he has vast knowledge to help guide clients through the transaction.</p>")
+        break;
+    }
+
+  </script>
 
 </body>
 
