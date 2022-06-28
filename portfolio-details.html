@@ -70,7 +70,8 @@ Walnut, CA area." />
     <div class="container d-flex align-items-center">
       <!-- <h1 class="logo me-auto"><a href="index.html">Presento<span>.</span></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png"
+          alt="AWC (Agents Who Care) Realty Logo"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -159,7 +160,7 @@ Walnut, CA area." />
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h3>Agents Who Care Realty</h3>
             <p>
               422 South Grand Avenue<br>
@@ -176,7 +177,7 @@ Walnut, CA area." />
             <p>Saturday - Sunday <br /> 9:00AM - 7:30PM</p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#buy">Buy</a></li>
@@ -189,14 +190,18 @@ Walnut, CA area." />
             </ul>
           </div>
 
-          <div class="col-lg-5 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Follow us on Social Media</h4>
             <p>Stay up to date with the latest market trends!</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <div class="social-links">
+              <a href="https://www.facebook.com/AWCRealty" target="_blank" class="facebook"><i
+                  class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/awcrealty" target="_blank" class="instagram"><i
+                  class="bx bxl-instagram"></i></a>
+              <a href="https://www.yelp.com/biz/agents-who-care-realty-covina" target="_blank" class="yelp"><i
+                  class="bx bxl-yelp"></i></a>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -211,14 +216,6 @@ Walnut, CA area." />
         <div class="row" style="margin-top:15px;">
           <a href="privacy-policy.html" style="font-size:11px;">Privacy Policy</a>
         </div>
-      </div>
-      <div class="social-links text-center text-md-end pt-3 pt-md-0">
-        <a href="https://www.facebook.com/AWCRealty" target="_blank" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/awcrealty" target="_blank" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://www.yelp.com/biz/agents-who-care-realty-covina" target="_blank" class="yelp"><i
-            class="bx bxl-yelp"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -246,20 +243,11 @@ Walnut, CA area." />
     const profile = urlParams.get('profile');
 
     switch (profile) {
-      case "monica-diaz-campbell":
-        $("title").html("Monica Diaz-Campbell - AWC (Agents Who Care) Realty");
-        $(".realtor-name").html("Monica Diaz-Campbell");
-        $("#profile-picture").attr("src", "assets/img/team/team-1.jpg");
-        $("#title").html("Listing Agent");
-        $("#phone").html("(626) 890-7187");
-        $("#email").html("monica@awc.realty");
-        $("#license").html("DRE #01293082");
-        $("#about-me").html("<p>Monica Diaz has been a full time successful real estate sales professional since 2004. Formerly 11 years with Century 21 Masters, 4 years with Keller Williams Covina, and now with eXp Realty, Monica has sold over $350 Million in real estate in her career and is continues to be a top producing agent in Southern California.</p><p>Monica was a successful home appraiser for 14 years and is an expert in understanding the value of Southern CA homes.</p>")
-        break;
       case "george-cordova":
         $("title").html("George Cordova - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("George Cordova");
         $("#profile-picture").attr("src", "assets/img/team/team-2.jpg");
+        $("#profile-picture").attr("alt", "George Cordova - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(626) 485-4341");
         $("#email").html("george@awc.realty");
@@ -270,6 +258,7 @@ Walnut, CA area." />
         $("title").html("Matthew Wong - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Matthew Wong");
         $("#profile-picture").attr("src", "assets/img/team/team-3.jpg");
+        $("#profile-picture").attr("alt", "Matthew Wong - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(626) 759-3366");
         $("#email").html("matt@awc.realty");
@@ -280,6 +269,7 @@ Walnut, CA area." />
         $("title").html("Kristal Loera - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Kristal Loera");
         $("#profile-picture").attr("src", "assets/img/team/team-4.jpg");
+        $("#profile-picture").attr("alt", "Kristal Loera - AWC (Agents Who Care) Realty");
         $("#title").html("Buyer's Agent");
         $("#phone").html("(626) 807-0094");
         $("#email").html("kristal@monicadiazteam.comy");
@@ -291,6 +281,7 @@ Walnut, CA area." />
         $("title").html("Chandra Guerrero - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Chandra Guerrero");
         $("#profile-picture").attr("src", "assets/img/team/team-5.jpg");
+        $("#profile-picture").attr("alt", "Chandra Guerrero - AWC (Agents Who Care) Realty");
         $("#title").html("Premier Buyer's Agent");
         $("#phone").html("(626) 922-0925");
         $("#email").html("chandra@awc.realty");
@@ -302,6 +293,7 @@ Walnut, CA area." />
         $("title").html("Cynthia Moreno - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Cynthia Moreno");
         $("#profile-picture").attr("src", "assets/img/team/team-6.jpg");
+        $("#profile-picture").attr("alt", "Cynthia Moreno - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(909) 843-0693");
         $("#email").html("cynthia@awc.realty");
@@ -312,6 +304,7 @@ Walnut, CA area." />
         $("title").html("Damian Chavez - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Damian Chavez");
         $("#profile-picture").attr("src", "assets/img/team/team-7.jpg");
+        $("#profile-picture").attr("alt", "Damian Chavez - AWC (Agents Who Care) Realty");
         $("#title").html("Real Estate Agent");
         $("#phone").html("(909) 230-0735");
         $("#email").html("damian@awc.realty");
@@ -322,6 +315,7 @@ Walnut, CA area." />
         $("title").html("Ben Mackenzie - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Ben Mackenzie");
         $("#profile-picture").attr("src", "assets/img/team/team-8.jpg");
+        $("#profile-picture").attr("alt", "Ben Mackenzie - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(909) 637-4655");
         $("#email").html("ben@awc.realty");
@@ -332,6 +326,7 @@ Walnut, CA area." />
         $("title").html("Cassandra Martinez - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Cassandra Martinez");
         $("#profile-picture").attr("src", "assets/img/team/team-9.jpg");
+        $("#profile-picture").attr("alt", "Cassandra Martinez - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(626) 269-6568");
         $("#email").html("cassandra@awc.realty");
@@ -343,6 +338,7 @@ Walnut, CA area." />
         $("title").html("Hector Rodriguez - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Hector Rodriguez");
         $("#profile-picture").attr("src", "assets/img/team/team-10.jpg");
+        $("#profile-picture").attr("alt", "Hector Rodriguez - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(909) 938-5255");
         $("#email").html("hector@awc.realty");
@@ -354,6 +350,7 @@ Walnut, CA area." />
         $("title").html("Jim Guerra - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Jim Guerra");
         $("#profile-picture").attr("src", "assets/img/team/team-11.jpg");
+        $("#profile-picture").attr("alt", "Jim Guerra - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("(626) 260-1000");
         $("#email").html("jgrenloans@gmail.com");
@@ -365,6 +362,7 @@ Walnut, CA area." />
         $("title").html("Alvin Lee - AWC (Agents Who Care) Realty");
         $(".realtor-name").html("Alvin Lee");
         $("#profile-picture").attr("src", "assets/img/team/team-11.jpg");
+        $("#profile-picture").attr("alt", "Alvin Lee - AWC (Agents Who Care) Realty");
         $("#title").html("Realtor");
         $("#phone").html("");
         $("#email").html("");
@@ -372,6 +370,16 @@ Walnut, CA area." />
         $("#about-me").html("")
         $("#about-me-heading").remove();
         break;
+      default:
+        $("title").html("Monica Diaz-Campbell - AWC (Agents Who Care) Realty");
+        $(".realtor-name").html("Monica Diaz-Campbell");
+        $("#profile-picture").attr("src", "assets/img/team/team-1.jpg");
+        $("#profile-picture").attr("alt", "Monica Diaz-Campbell - AWC (Agents Who Care) Realty");
+        $("#title").html("Listing Agent");
+        $("#phone").html("(626) 890-7187");
+        $("#email").html("monica@awc.realty");
+        $("#license").html("DRE #01293082");
+        $("#about-me").html("<p>Monica Diaz has been a full time successful real estate sales professional since 2004. Formerly 11 years with Century 21 Masters, 4 years with Keller Williams Covina, and now with eXp Realty, Monica has sold over $350 Million in real estate in her career and is continues to be a top producing agent in Southern California.</p><p>Monica was a successful home appraiser for 14 years and is an expert in understanding the value of Southern CA homes.</p>")
     }
 
   </script>
